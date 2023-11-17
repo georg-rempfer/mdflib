@@ -344,7 +344,7 @@ void IChannelConversion::Parameter(size_t index, uint64_t parameter) {
       return;
   }
   while (index >= value_list_.size()) {
-    value_list_.emplace_back(0ULL);
+    value_list_.emplace_back(0UL);
   }
   value_list_[index] = parameter;
 }
